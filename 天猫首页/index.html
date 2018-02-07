@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天猫</title>
+		<!--引入bootstrap和jq还有fa字库-->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/jquery-1.11.3.js"></script>
+		<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+		<!--引入结束-->
+		<script src="js/iconfont.js"></script>
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<!--顶部导航部分-->
+		<nav class="font">
+			<div class="nav_l pull-left ">
+				<span>喵，欢迎来天猫</span>
+			<a href="">请登录</a><a href="">免费注册</a>
+			</div>
+			<div class="nav_r nav_l pull-right">
+				<a href="">我的淘宝<i class="caret"></i></a>
+				<a href="" ><i class="glyphicon glyphicon-shopping-cart redcolor"></i>
+				<span>购物车</span><span>0</span><span>件</span></a>
+				<a href=""><span>收藏夹</span><i class="caret"></i><span>&nbsp;&nbsp;|</span></a>
+				<a href=""><i  class="glyphicon glyphicon-phone redcolor"></i>
+					<span>手机版</span></a>
+				<a href="">淘宝网
+				
+				</a>
+				<a href="">商家支持<i class="caret"></i></a>
+				<a href=""><i class="glyphicon glyphicon-menu-hamburger redcolor"></i>网站导航<i class="caret"></i></a>
+			</div>
+		</nav>
+		<!--顶部的搜索-->
+		<!--z-index层级会导致层级小的功能实现如input,a等默认功能实现-->
+		<div class="sear">
+			<a href=""><img src="img/img/logo.png" alt=""  width="240" height="130" class="logo"/></a>
+			<div class="search">
+			<input type="text" placeholder="搜索 天猫 商品/品牌/店铺" /><button type="submit" class="searchBtn">搜索</button>
+			<!--搜索框下面的推荐搜索-->
+		<div class="searchbelow">
+			<span><a href="" class="redcolor"> 针织衫 </a><span>|</span></span>
+			<span><a href=""> 羽绒服</a><span>|</span></span>
+			<span><a href=""> 四件套 </a><span>|</span></span>
+			<span><a href="" class="redcolor"> 电动牙刷 </a><span>|</span></span>
+			<span><a href=""> 客厅灯 </a><span>|</span></span>
+			<span><a href=""> 口红 </a><span>|</span></span>
+			<span><a href="" class="redcolor"> 手机 </a><span>|</span></span>
+			<span><a href=""> 运动鞋 </a><span>|</span></span>
+			<span><a href="" class="redcolor"> 牛奶 </a></span>
+		</div>
+			</div>
+		</div>
+		<!--中心轮播图和分类导航-->
+		<div class="bannerbar">
+			<!--顶部分类导航-->
+			<div class="bar">
+				<div class="bar_l"><i class="glyphicon glyphicon-menu-hamburger"></i><span>商品分类</span></div>
+				<div class="bar_r">
+				<a href=""><img src="img/tmcs.png" width="100" height="30"/></a>
+				<a href=""><img src="img/tmgj.png" width="100" height="30"/></a>
+				<a href="">天猫会员</a>
+				<a href="">电器城</a>
+				<a href="">喵鲜生</a>
+				<a href="">医药馆</a>
+				<a href="">营业厅</a>
+				<a href="">魅力惠</a>
+				<a href="">飞猪旅行</a>
+				<a href="">苏宁易购</a></div>
+			</div>
+			<!--轮播部分-->
+			<div class="banner">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				  </ol>
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      		<img src="img/banner1.jpg" >
+				    </div>
+				    <div class="item">
+				            <img src="img/banner2.jpg" >
+				    </div>
+				    <div class="item">
+				            <img src="img/banner3.jpg" >
+				    </div>
+				 
+				    <div class="item">
+				            <img src="img/banner4.jpg">
+				    </div>
+				      <div class="item">
+				            <img src="img/banner5.jpg" >
+				    </div>
+				      <div class="item">
+				            <img src="img/banner6.jpg" >
+				    </div>
+ 
+					  </div>
+					</div>
+			</div>
+		</div>
+		<!--分类列表-->	
+		<div class="sort">
+			<div style="position:relative">
+			<div class="sort_l">
+				<div><i class="fa fa-venus"></i><a href="">女装 /内衣</a></div>
+				<div><i class="fa fa-mars-stroke"></i><a href="">男装 /运动户外</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 女鞋 /男鞋 /箱包</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 美妆 /个人护理</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href="">腕表 /眼镜 /珠宝饰品</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href="">手机 /数码 /电脑办公</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 母婴玩具</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 零食 /茶酒 /进口食品</a></div>
+				<div class="sort_ll"><i class="fa fa-shopping-cart"></i><a href=""> 生鲜水果 </a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 大家电 /生活电器</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 家具建材</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 汽车 /配件 /用品</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href="">  家纺 /家饰 /鲜花</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 医药保健</a></div>
+				<div><i class="fa fa-shopping-cart"></i><a href=""> 厨具 /收纳 /宠物</a></div>
+				<div><i class="fa fa-book"></i><a href=""> 图书音像</a></div>
+			</div>
+			<div class="sort_r">
+				<div class="row">
+				<div class="sort_t ">当季流行 ></div>
+				<div class="sort_c">
+				<a href="">冬季新品</a>
+				<a href="" class="redcolor">商场同款</a>
+				<a href="">毛呢大衣</a>
+				<a href="">毛针织衫</a>
+				<a href="">裤子</a>
+				<a href="" class="redcolor">气质连衣裙</a>
+				<a href="">无痕文胸</a>
+				<a href="">运动文胸</a>
+				<a href="">潮流家居服</a>
+				<a href="" class="redcolor">百搭船袜</a></div>
+				</div>
+				<div class="row">
+					<div class="sort_t">精选上衣  > </div>
+					<div class="sort_c">
+						<a href="">毛呢外套</a>
+						<a href="">羽绒服</a>
+						<a href="" class="redcolor">棉服</a>
+						<a href="">丝绒卫衣</a>
+						<a href="">毛针织衫</a>
+						<a href="" class="redcolor">皮毛一体</a>
+						<a href="">皮草</a>
+						<a href="">毛衣</a>
+						<a href="">衬衫</a>
+						<a href="" class="redcolor">卫衣</a>
+						<a href="">针织衫</a>
+						<a href="" class="redcolor">T恤</a>
+						<a href="">短外套</a>
+						<a href="" class="redcolor">小西装</a>
+						<a href="">风衣</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">浪漫裙装 ></div>
+					<div class="sort_c">
+						<a href="" class="redcolor">连衣裙</a>
+						<a href="">半身裙</a>
+						<a href="">A字裙</a>
+						<a href="" class="redcolor">荷叶边裙</a>
+						<a href="">大摆裙</a>
+						<a href="">包臀裙</a>
+						<a href="" class="redcolor">百褶裙</a><br />
+						<a href="">长袖连衣裙</a>
+						<a href="">棉麻连衣裙</a>
+						<a href="">牛仔裙</a>
+						<a href="">蕾丝连衣裙</a>
+						<a href="" class="redcolor">真丝连衣裙</a>
+						<a href="">印花连衣裙</a>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">女士下装 ></div>
+					<div class="sort_c">
+						<a href="" class="redcolor">休闲裤</a>
+						<a href="">阔腿裤</a>
+						<a href="">牛仔裤</a>
+						<a href="">打底裤</a>
+						<a href="">开叉运动裤</a>
+						<a href="" class="redcolor">哈伦裤</a>
+						<a href="">背带裤</a><br />
+						<a href="">小脚裤</a>
+						<a href="" class="redcolor">西装裤</a>
+						<a href="">短裤</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">特色女装 ></div>
+					<div class="sort_c">
+						<a href="" class="redcolor">时尚套装</a>
+						<a href="">休闲套装</a>
+						<a href="">日系女装</a>
+						<a href="">精选妈妈装</a>
+						<a href="">大码女装</a>
+						<a href="">职业套装</a><br />
+						<a href="">优雅旗袍</a>
+						<a href="" class="redcolor">精致礼服</a>
+						<a href="">婚纱</a>
+						<a href="" class="redcolor">唐装</a>
+						<a href="">小码女装</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">文胸塑身 ></div>
+					<div class="sort_c">
+						<a href="">光面文胸</a>
+						<a href="" class="redcolor">运动文胸</a>
+						<a href="">美背文胸</a>
+						<a href="">聚拢文胸</a>
+						<a href="">大杯文胸</a>
+						<a href="" class="redcolor">轻薄塑身</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">家 居 服 ></div>
+					<div class="sort_c">
+						<a href="">春夏家居服</a>
+						<a href="" class="redcolor">纯棉家居服</a>
+						<a href="">莫代尔家居服</a>
+						<a href="">真丝家居服</a>
+						<a href="">春夏睡裙</a><br />
+						<a href="" class="redcolor">男士家居服</a>
+						<a href="">情侣家居服</a>
+						<a href="">性感睡裙</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sort_t">内裤背心 ></div>
+					<div class="sort_c">
+						<a href="" class="redcolor">男士内裤装</a>
+						<a href="">女式内裤</a>
+						<a href="">男士内裤多条装</a>
+						<a href="" class="redcolor">女士内裤多条装</a>
+						<a href="">莫代尔内裤</a>
+					</div>
+				</div>
+			</div>
+			<!--分类品牌-->
+			<div class="sort_end"><img src="img/nvzhaung.png" alt="" /></div>
+			</div>
+		</div>
+		<!--分类产品展示区-->
+		<div class="content">
+			<!--活动展示版块-->
+			<div class="act">
+				<div class="act1">
+				<div>
+					<div>
+						<span class="lg">品牌闪购</span>
+						<span>BRAND SALE</span>
+						<a href=""><span class="bg1"></span></a>
+						<div class="dimg1"><a href=""><img src="img/act1.jpg" alt=""/></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="act2">
+				<div>
+					<div>
+						<span class="lg">聚名品</span>
+						<span>LUXURY CHANNEL</span>
+						<a href=""><span class="more">更多</span></a>
+						<div class="dimg2"><a href=""><img src="img/act2.jpg" width="485" height="316"/></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="act3">
+				<div>
+					<div>
+						<span class="lg"> 品牌活动 </span>
+						<span>BRAND ACTIVITY</span>
+						<a href=""><span class="more">更多</span></a>
+						<div class="dimg3"><a href=""><img src="img/act3.jpg" width="485" height="316"/></a></div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--优惠券商户区域-->
+			<div class="yhq">
+				<ul >
+			<li>
+				<a href=""><img src="img/pp1.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp2.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp3.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp4.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp5.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp6.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp7.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp8.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp9.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp10.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp11.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp12.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp13.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp14.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp15.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp16.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp17.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp18.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp19.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp20.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp21.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp22.png"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp23.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp24.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp25.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp26.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp27.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp28.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li>
+				<a href=""><img src="img/pp29.jpg"></a>
+				<div class="con">
+					<p class="price">优惠券￥100</p>
+					<a href="">点击进入</a>
+				</div>
+			</li>
+			<li class="refresh">
+				<div class="re">
+					<span class="fa fa-refresh fa-2x icon"></span>
+				<p>换一换</p>
+				</div>
+				
+			</li>
+		</ul>
+			</div>
+			<!--天猫超市-->
+			<div class="tmsurper">
+				<!--天猫超市导航部分-->
+				<div class="tmnav">
+					<div class="tmnav_l pull-left"><img src="img/tmcs2.png" alt="" width="214" height="25"/></div>
+					<div class="tmnav_r pull-right">
+						<a href="">进口食品</a>
+						<a href="">食品饮料</a>
+						<a href="">粮油副食</a>
+						<a href="">美容洗护</a>
+						<a href="">家具家电</a>
+						<a href="">家庭清洁</a>
+						<a href="">母婴用品</a>
+						<a href="">生鲜水果</a>
+					</div>
+				</div>
+				<!--天猫超市内容区域-->
+				<div class="tmcon" style="position: relative;">
+					<!--天猫超市左侧内容-->
+					<div class="tmimg" style="position: relative;">
+						<a href=""> <img src="img/tmcs3.jpg"  width="235" height="658"/> </a>
+						<div class="tmyhq">
+						<a href=""><div class="tmt1 pull-left">天猫超市</div> <div class="tmt2 pull-left text-left">抢50元券放肆囤年货</div></a>
+						<a href=""><i class="bg"></i></a>
+						</div>		
+					</div>
+					<!--天猫超市tab选项卡商品展示-->
+						<div class="tmtab">
+						<ul class="title">
+							<li style="color:#000">今日疯抢</li>
+							<li style="background-color:#00b262" class="gr">量贩装</li>
+						</ul>
+						<div class="con">
+							
+						</div>
+					</div>
+					<!--天猫超市产品区域-->
+					<div class="tmcp">
+						<ul>
+							<li><a href="">
+								<img src="img/tmcscp1.jpg" alt="" />
+								<div class="tmtitle">口水娃 坚果炒货豆类零食 青豌豆青豆蒜香味300g</div>
+								<div class="tmprice">&yen;12.8</div>
+								
+							</a></li>
+							<li ><a href="">
+								<img src="img/tmcscp2.jpg" alt="" />
+								<div class="tmtitle">妙洁一拖两用魔术扫把 送玻璃窗擦 刮水器地刮扫帚刮水扫水</div>
+								<div class="tmprice">&yen;59</div>
+								
+							</a></li>
+							<li class="wrap1"><a href="">
+								<img src="img/tmcscp3.jpg" alt="" />
+								<div class="tmtitle">加多宝凉茶茶饮料250ml*16*2怕上火 喝加多宝盒装</div>
+								<div class="tmprice">&yen;45.6</div>
+								
+							</a></li>
+							<li class="wrap2"><a href="">
+								<img src="img/tmcscp4.jpg" alt="" />
+								<div class="tmtitle">新包装马来西亚进口旧街场三合一原味速溶白咖啡20条+送2条/盒</div>
+								<div class="tmprice">&yen;59.9</div>
+								
+							</a></li>
+							<li class="wrap3"><a href="">
+								<img src="img/tmcscp5.jpg" alt="" />
+								<div class="tmtitle">Giotto意大利进口儿童24色水彩笔可水洗绘画笔学生文具画笔彩笔</div>
+								<div class="tmprice">&yen;59</div>
+								
+							</a></li>
+							<li class="wrap4"><a href="">
+								<img src="img/tmcscp6.jpg" alt="" />
+								<div class="tmtitle">固本堂阿胶红糖姜茶200g 速溶颗粒老姜母茶 共20袋</div>
+								<div class="tmprice">&yen;29</div>
+								
+							</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<!--天猫国际部分--->
+		<div class="tmhk">
+			<div class="tmhknav">
+				<div class="tmgjnav_l pull-left"><img src="img/tmgj2.png" alt="" width="214" height="25"/></div>
+					<div class="tmgjnav_r pull-right">
+						<a href="">口红</a>
+						<a href="">YSL</a>
+						<a href="">面膜</a>
+						<a href="">防晒</a>
+						<a href="">迪奥</a>
+					</div>
+			</div>
+			<div class="tmhkcon">
+				<div class="tmhkcon1">
+					<div class="tmhkimg" style="position: relative;"><a href=""><img src="img/tmhk_l1.jpg" alt="" width="235" height="301" />
+					<div class="hktitle">
+						<div class="hktitle1">全球洋货</div>
+					<div class="hktitle2">尖货分享全民疯狂购</div>
+					<i></i>
+					</div>
+					<ul class="hkul">
+						<li class="fist">
+							<div class="title">官方直营有好货</div>
+							<div class="sub_title">爆款直降妙物来</div>
+							<img src="img/hkcp1.jpg" alt="" />
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp2.jpg" alt="" /></div>
+							<div class="tmtitle">澳洲进口Morning fresh洗洁精去污洗碗液不伤手400ml*2瓶 组合装</div>
+							<div class="tmprice">&yen;45</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp3.jpg" alt="" /></div>
+							<div class="tmtitle">日本espie rouge芦荟维他命e深层滋润唇膏补水防干裂无色护唇膏</div>
+							<div class="tmprice">&yen;38</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp4.png" alt="" /></div>
+							<div class="tmtitle">【直营】Comotomo可么多么硅胶奶嘴奶瓶母乳实感</div>
+							<div class="tmprice">&yen;78</div>
+							</a>
+						</li>
+					</ul>
+					</a></div>
+					
+				</div>
+				<div class="tmhkcon2">
+					<div class="tmhkimg" style="position: relative;"><a href=""><img src="img/tmhk_l2.jpg" alt="" width="235" height="301" />
+					<div class="hktitle">
+						<div class="hktitle1">尖货来袭</div>
+					<div class="hktitle2">秒物共享好货全天购</div>
+					<i></i>
+					</div>
+					<ul>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp5.jpg" alt="" /></div>
+							<div class="tmtitle">进口Aquafresh三色牙膏100ml 按压式美白去烟渍去口臭成人牙膏◎</div>
+							<div class="tmprice">&yen;26.8</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp6.png" alt="" /></div>
+							<div class="tmtitle">保税日本膳魔师不锈钢保温杯水杯轻量女保冷保温水壶杯子JNL-502</div>
+							<div class="tmprice">&yen;199</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp7.jpg" alt="" /></div>
+							<div class="tmtitle">The Body Shop美体小铺无硅防脱止痒生姜洗发水控油去屑400ml*2瓶</div>
+							<div class="tmprice">&yen;170</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+							<div class="hkimg"><img src="img/hkcp8.jpg" alt="" /></div>
+							<div class="tmtitle">牛油果通用型宠物猫咪用品三文鱼进口成猫粮5kg</div>
+							<div class="tmprice">&yen;399</div>
+							</a>
+						</li>
+					</ul>
+					</a></div>
+				</div>
+			</div>
+		</div>
+		<!--横幅全屏广告区域1-->
+		<div class="ad">
+			<a href=""><img src="img/ad1.jpg"/></a>
+		</div>
+		<!--分类板块区域-->
+			<!--美丽人生版块-->
+			<div class="mlrs">
+				<div class="sortnav">
+					
+					<div class="pull-left">
+					<i class="mark"></i>
+					<span class="ti1">美丽人生</span>
+					<span class="ti2">FASHION & BEAUTY</span>
+				</div>
+				<div class="pull-right">
+					<a href="">连衣裙</a>
+					<a href="">T恤男</a>
+					<a href="">美容护肤</a>
+					<a href="">休闲男鞋</a>
+					<a href="">黄金项链</a>
+					<a href="">单鞋</a>
+					<a href="">女包</a>
+					<a href="">文胸</a>
+					<a href="">大牌腕表</a>
+				</div>
+				</div>
+				<!--分类内容区域-->
+				<div class="sortcon">
+					<div class="sortimg" style="position:relative">
+						<a href=""><img src="img/sort1.jpg" alt="" width="235" height="618"/></a>
+						<div class="box">
+							<a href="">
+								<div class="box1">大牌美妆</div>
+							<div class="box2">年货礼盒买1享3</div>
+							<span></span>
+							</a>
+						</div>
+					</div>
+					<!--产品列表-->
+					<div style="position: relative;">
+					<ul>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp1.jpg" alt="" /></div>
+								<div class="tmtitle">回力男鞋经典款情侣帆布鞋休闲鞋低帮篮球鞋板鞋运动鞋女鞋子秋季</div>
+								<div class="tmprice">&yen;79</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp2.jpg" alt="" /></div>
+								<div class="tmtitle">Biore/花王碧柔保湿卸妆液*2组合 官方直售</div>
+								<div class="tmprice">&yen;142</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp3.jpg" alt="" /></div>
+								<div class="tmtitle">李宁运动鞋男鞋跑步鞋秋冬季轻软底健步鞋慢跑鞋休闲鞋ACGL049 TX</div>
+								<div class="tmprice">&yen;109.7</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp4.jpg" alt="" /></div>
+								<div class="tmtitle">2017波司登保暖加绒加厚衬衫男长袖中年格子衬衣带绒宽松大码男装</div>
+								<div class="tmprice">&yen;129</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp5.jpg" alt="" /></div>
+								<div class="tmtitle">TOPSHOP 军绿色迷彩花纹可拆卸内里大口袋女士外套11R02LKHA</div>
+								<div class="tmprice">&yen;279</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp6.jpg" alt="" /></div>
+								<div class="tmtitle">卡拉羊双肩包男包大学生中学生书包高中生休闲包大容量男士旅行包</div>
+								<div class="tmprice">&yen;189</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp7.jpg" alt="" /></div>
+								<div class="tmtitle">伊索正品精钢全自动机械表 时尚夜光手表男士防水多功能男表9027</div>
+								<div class="tmprice">&yen;398</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/sortcp8.jpg" alt="" /></div>
+								<div class="tmtitle">流行美发饰品 星星发圈头花职业皮筋发绳饰品韩国头绳</div>
+								<div class="tmprice">&yen;49</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<!--潮电酷玩版块-->
+			<div class="cdkw">
+				<div class="sortnav">
+					
+					<div class="pull-left">
+					<i class="mark" style="background:#0aa6e8;"></i>
+					<span class="ti1">潮电酷玩</span>
+					<span class="ti2">ELECTRONICS</span>
+				</div>
+				<div class="pull-right">
+					<a href="">手机</a>
+					<a href="">iPhone</a>
+					<a href="">相机 </a>
+					<a href="">数码配件</a>
+					<a href="">影音电玩</a>
+					<a href="">生活电器</a>
+					<a href="">个人护理</a>
+					<a href="">电脑硬件</a>
+					<a href="">笔记本</a>
+				</div>
+				</div>
+				<!--分类内容区域-->
+				<div class="sortcon">
+					<div class="sortimg" style="position:relative">
+						<a href=""><img src="img/sort2.jpg" alt="" width="235" height="618"/></a>
+						<div class="box">
+							<a href="">
+								<div class="box1" style="padding-top:15px">轻薄</div>
+							<div class="box2">笔记本分期免息</div>
+							<span></span>
+							</a>
+						</div>
+					</div>
+					<!--产品列表-->
+					<div style="position: relative;">
+					<ul>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/cd1.png" alt="" /></div>
+								<div class="tmtitle">回力男鞋经典款情侣帆布鞋休闲鞋低帮篮球鞋板鞋运动鞋女鞋子秋季</div>
+								<div class="tmprice">&yen;79</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/cd2.jpg" alt="" /></div>
+								<div class="tmtitle">Biore/花王碧柔保湿卸妆液*2组合 官方直售</div>
+								<div class="tmprice">&yen;142</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/cd3.jpg" alt="" /></div>
+								<div class="tmtitle">李宁运动鞋男鞋跑步鞋秋冬季轻软底健步鞋慢跑鞋休闲鞋ACGL049 TX</div>
+								<div class="tmprice">&yen;109.7</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/cd4.jpg" alt="" /></div>
+								<div class="tmtitle">2017波司登保暖加绒加厚衬衫男长袖中年格子衬衣带绒宽松大码男装</div>
+								<div class="tmprice">&yen;129</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/cd5.jpg" alt="" /></div>
+								<div class="tmtitle">TOPSHOP 军绿色迷彩花纹可拆卸内里大口袋女士外套11R02LKHA</div>
+								<div class="tmprice">&yen;279</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/cd6.jpg" alt="" /></div>
+								<div class="tmtitle">卡拉羊双肩包男包大学生中学生书包高中生休闲包大容量男士旅行包</div>
+								<div class="tmprice">&yen;189</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/cd7.jpg" alt="" /></div>
+								<div class="tmtitle">伊索正品精钢全自动机械表 时尚夜光手表男士防水多功能男表9027</div>
+								<div class="tmprice">&yen;398</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/cd8.jpg" alt="" /></div>
+								<div class="tmtitle">流行美发饰品 星星发圈头花职业皮筋发绳饰品韩国头绳</div>
+								<div class="tmprice">&yen;49</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				</div>
+			<!--横屏广告区域2-->
+			<div class="ad"><a href=""><img src="img/ad2.jpg" alt="" /></a></div>
+			<!--居家生活版块-->	
+				<div class="jjsh">
+				<div class="sortnav">
+					
+					<div class="pull-left">
+					<i class="mark"></i>
+					<span class="ti1">居家生活</span>
+					<span class="ti2">GROCERY & HEALTH</span>
+				</div>
+				<div class="pull-right">
+					<a href=""> 零食</a>
+					<a href=""> 牛奶</a>
+					<a href=""> 居家饰品</a>
+					<a href=""> 保温杯</a>
+					<a href=""> 保健品</a>
+					<a href=""> 常用药 </a>
+					<a href=""> 热门图书</a>
+					<a href=""> 洗发水</a>
+					<a href=""> 卫生巾</a>
+					<a href=""> 家庭清洁</a>
+					<a href=""> 狗粮</a>
+					
+				</div>
+				</div>
+				<!--分类内容区域-->
+				<div class="sortcon">
+					<div class="sortimg" style="position:relative">
+						<a href=""><img src="img/sort3.jpg" alt="" width="235" height="618"/></a>
+						<div class="box">
+							<a href="">
+								<div class="box1">品质生鲜</div>
+							<div class="box2">全球甄选第二件1元</div>
+							<span></span>
+							</a>
+						</div>
+					</div>
+					<!--产品列表-->
+					<div style="position: relative;">
+					<ul>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/jj1.jpg" alt="" /></div>
+								<div class="tmtitle">狗狗牵引绳胸背带 中小型犬狗链子 宠物用品泰迪遛狗绳链子遛狗绳</div>
+								<div class="tmprice">&yen;9.9</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/jj2.jpg" alt="" /></div>
+								<div class="tmtitle">德国进口Nestle雀巢金牌烘焙速溶咖啡100g*2冻干醇黑瓶装咖啡</div>
+								<div class="tmprice">&yen;108</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/jj3.jpg" alt="" /></div>
+								<div class="tmtitle">4瓶汤臣倍健牌维生素B族片 550mg/片*100片*2瓶套餐旗舰店官网</div>
+								<div class="tmprice">&yen;128</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/jj4.jpg" alt="" /></div>
+								<div class="tmtitle">丰收桂花陈酒 桂花陈酿甜红葡萄酒 500ML*2支装 甜酒桂花酒</div>
+								<div class="tmprice">&yen;42.9</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/jj5.jpg" alt="" /></div>
+								<div class="tmtitle">【顺丰包邮】费列罗巧克力礼盒装创意生日礼物费力罗情人节送</div>
+								<div class="tmprice">&yen;79</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/jj6.jpg" alt="" /></div>
+								<div class="tmtitle">伊利果享青少年学生奶粉儿童成长高钙高锌900g罐装6岁营养牛奶粉</div>
+								<div class="tmprice">&yen;89.25</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/jj7.png" alt="" /></div>
+								<div class="tmtitle">【直营】Comotomo可么多么硅胶奶嘴奶瓶母乳实感</div>
+								<div class="tmprice">&yen;78</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/jj8.jpg" alt="" /></div>
+								<div class="tmtitle">巨型大白兔奶糖200g买2个送礼袋创意糖果礼盒生日情人节礼物零食</div>
+								<div class="tmprice">&yen;15</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<!--打造爱巢版块-->
+				<div class="dzac">
+				<div class="sortnav">
+					
+					<div class="pull-left">
+					<i class="mark" style="background:#FF0036"></i>
+					<span class="ti1">打造爱巢</span>
+					<span class="ti2">HOME</span>
+				</div>
+				<div class="pull-right">
+					<a href="">  家具</a>
+					<a href=""> 大家电</a>
+					<a href=""> 四件套</a>
+					<a href=""> 健康电器</a>
+					<a href=""> 厨房电器</a>
+					<a href=""> 吸顶灯</a>
+					<a href=""> 平板电视</a>
+					<a href=""> 装修设计</a>
+					<a href=""> 跑步机 </a>
+				</div>
+				</div>
+				<!--分类内容区域-->
+				<div class="sortcon">
+					<div class="sortimg" style="position:relative">
+						<a href=""><img src="img/sort4.jpg" alt="" width="235" height="618"/></a>
+						<div class="box">
+							<a href="">
+								<div class="box1">大牌狂欢</div>
+							<div class="box2" style="font-size:20px">品质厨卫馆装修更省心</div>
+							<span></span>
+							</a>
+						</div>
+					</div>
+					<!--产品列表-->
+					<div style="position: relative;">
+					<ul>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/dz1.jpg" alt="" /></div>
+								<div class="tmtitle">小熊电热锅多功能家用蒸煮双层分体式小型涮火锅2-3人宿舍电煮锅</div>
+								<div class="tmprice">&yen;219</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/dz2.png" alt="" /></div>
+								<div class="tmtitle">亿家达电脑椅家用网布办公椅人体工学椅老板椅职员椅学生椅休闲椅</div>
+								<div class="tmprice">&yen;149</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/dz3.jpg" alt="" /></div>
+								<div class="tmtitle">会议桌长桌简易工作台员工桌子大型培训洽谈桌简约现代职员条桌</div>
+								<div class="tmprice">&yen;410</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/dz4.jpg" alt="" /></div>
+								<div class="tmtitle">Herman Miller Aeron 座椅 标准配置【骶骨承托】</div>
+								<div class="tmprice">&yen;8919</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/dz5.jpg" alt="" /></div>
+								<div class="tmtitle">Supor/苏泊尔 CFXB40B2T-70 65 机械式电饭锅老式不粘锅电饭煲4升</div>
+								<div class="tmprice">&yen;149</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/dz6.jpg" alt="" /></div>
+								<div class="tmtitle">美的F1净水器滤芯MRO201-4 MRO1592-50G过滤器PP棉滤芯</div>
+								<div class="tmprice">&yen;70</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/dz7.jpg" alt="" /></div>
+								<div class="tmtitle">公牛定时器插座倒计时定时 GND-1电子定时开关电子定时器</div>
+								<div class="tmprice">&yen;69.2</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/dz8.jpg" alt="" /></div>
+								<div class="tmtitle">OUSHIBA/欧之宝 CFXBOB-MR C2A家用/车载小型电饭煲学生白领婴儿</div>
+								<div class="tmprice">&yen;80</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<!--横屏广告3-->
+			<div class="ad"><a href=""><img src="img/ad3.jpg" alt="" /></a></div>
+			<!--户外出行版块-->
+				<div class="hwcx">
+				<div class="sortnav">
+					
+					<div class="pull-left">
+					<i class="mark" style="background:#FF0036"></i>
+					<span class="ti1">户外出行</span>
+					<span class="ti2">OUTDOORS & AUTOMOTIVE</span>
+				</div>
+				<div class="pull-right">
+					<a href=""> 车秒贷</a>
+					<a href=""> 皮肤衣</a>
+					<a href=""> 运动鞋</a>
+					<a href=""> 4s保养</a>
+					<a href=""> 行车记录仪</a>
+					<a href=""> 轮胎 </a>
+				</div>
+				</div>
+				<!--分类内容区域-->
+				<div class="sortcon">
+					<div class="sortimg" style="position:relative">
+						<a href=""><img src="img/sort5.jpg" alt="" width="235" height="618"/></a>
+						<div class="box">
+							<a href="">
+								<div class="box1">球类盛宴</div>
+							<div class="box2" style="font-size:20px">100元券<br>限量抢购</div>
+							<span></span>
+							</a>
+						</div>
+					</div>
+					<!--产品列表-->
+					<div style="position: relative;">
+					<ul>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/hw1.jpg" alt="" /></div>
+								<div class="tmtitle">小熊电热锅多功能家用蒸煮双层分体式小型涮火锅2-3人宿舍电煮锅</div>
+								<div class="tmprice">&yen;219</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/hw2.jpg" alt="" /></div>
+								<div class="tmtitle">亿家达电脑椅家用网布办公椅人体工学椅老板椅职员椅学生椅休闲椅</div>
+								<div class="tmprice">&yen;149</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/hw3.jpg" alt="" /></div>
+								<div class="tmtitle">会议桌长桌简易工作台员工桌子大型培训洽谈桌简约现代职员条桌</div>
+								<div class="tmprice">&yen;410</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/hw4.jpg" alt="" /></div>
+								<div class="tmtitle">Herman Miller Aeron 座椅 标准配置【骶骨承托】</div>
+								<div class="tmprice">&yen;8919</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="simg"><img src="img/hw5.jpg" alt="" /></div>
+								<div class="tmtitle">Supor/苏泊尔 CFXB40B2T-70 65 机械式电饭锅老式不粘锅电饭煲4升</div>
+								<div class="tmprice">&yen;149</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/hw6.jpg" alt="" /></div>
+								<div class="tmtitle">美的F1净水器滤芯MRO201-4 MRO1592-50G过滤器PP棉滤芯</div>
+								<div class="tmprice">&yen;70</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/hw7.png" alt="" /></div>
+								<div class="tmtitle">公牛定时器插座倒计时定时 GND-1电子定时开关电子定时器</div>
+								<div class="tmprice">&yen;69.2</div>
+							</a>
+						</li>
+							<li>
+							<a href="">
+								<div class="simg"><img src="img/hw8.jpg" alt="" /></div>
+								<div class="tmtitle">OUSHIBA/欧之宝 CFXBOB-MR C2A家用/车载小型电饭煲学生白领婴儿</div>
+								<div class="tmprice">&yen;80</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>	
+			<!--猜你喜欢-->
+			<div class="ad"><img src="img/love.png" alt="" /></div>
+			<!--喜欢商品列表-->
+			<div class="love">
+				<ul>
+					<li><a href="">
+							<img src="img/lu1.png" alt="" />
+							<div class="tmtitle">【12期免息】Apple/苹果iPhone X 全网通4G智能手机苹果10 苹果X</div>
+							<div class="tmprice">&yen;8388.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu2.png" alt="" />
+							<div class="tmtitle">科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机</div>
+							<div class="tmprice">&yen;1799.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu3.jpg" alt="" />
+							<div class="tmtitle">2017新款iPad 9.7英寸苹果平板 32G/128G WiFi版</div>
+							<div class="tmprice">&yen;2558.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu4.png" alt="" />
+							<div class="tmtitle">【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器</div>
+							<div class="tmprice">&yen;48.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu5.jpg" alt="" />
+							<div class="tmtitle">Xiaomi/小米 小米电视4A 55英寸 4k超高清智能wifi网络液晶电视机</div>
+							<div class="tmprice">&yen;2889.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu6.png" alt="" />
+							<div class="tmtitle">三只松鼠 坚果大礼包1430g年货礼盒零食小吃每日坚果组合7袋批发</div>
+							<div class="tmprice">&yen;98.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu7.png" alt="" />
+							<div class="tmtitle">【三只松鼠开口松子218gx2】休闲零食坚果炒货东北手剥红松</div>
+							<div class="tmprice">&yen;49.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu8.png" alt="" />
+							<div class="tmtitle">Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air 128G 笔记本电脑</div>
+							<div class="tmprice">&yen;5958.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu9.png" alt="" />
+							<div class="tmtitle">【三只松鼠_手剥巴旦木235gx2袋】零食坚果炒货特产干果巴达木</div>
+							<div class="tmprice">&yen;36.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu10.jpg" alt="" />
+							<div class="tmtitle">Haier/海尔 EG10014B39GU1 10公斤kg智能变频滚筒全自动洗衣机</div>
+							<div class="tmprice">&yen;2699.0</div>
+						</a></li>
+						<li><a href="">
+							<img src="img/lu1.png" alt="" />
+							<div class="tmtitle">【12期免息】Apple/苹果iPhone X 全网通4G智能手机苹果10 苹果X</div>
+							<div class="tmprice">&yen;8388.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu2.png" alt="" />
+							<div class="tmtitle">科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机</div>
+							<div class="tmprice">&yen;1799.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu3.jpg" alt="" />
+							<div class="tmtitle">2017新款iPad 9.7英寸苹果平板 32G/128G WiFi版</div>
+							<div class="tmprice">&yen;2558.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu4.png" alt="" />
+							<div class="tmtitle">【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器</div>
+							<div class="tmprice">&yen;48.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu5.jpg" alt="" />
+							<div class="tmtitle">Xiaomi/小米 小米电视4A 55英寸 4k超高清智能wifi网络液晶电视机</div>
+							<div class="tmprice">&yen;2889.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu6.png" alt="" />
+							<div class="tmtitle">三只松鼠 坚果大礼包1430g年货礼盒零食小吃每日坚果组合7袋批发</div>
+							<div class="tmprice">&yen;98.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu7.png" alt="" />
+							<div class="tmtitle">【三只松鼠开口松子218gx2】休闲零食坚果炒货东北手剥红松</div>
+							<div class="tmprice">&yen;49.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu8.png" alt="" />
+							<div class="tmtitle">Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air 128G 笔记本电脑</div>
+							<div class="tmprice">&yen;5958.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu9.png" alt="" />
+							<div class="tmtitle">【三只松鼠_手剥巴旦木235gx2袋】零食坚果炒货特产干果巴达木</div>
+							<div class="tmprice">&yen;36.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu10.jpg" alt="" />
+							<div class="tmtitle">Haier/海尔 EG10014B39GU1 10公斤kg智能变频滚筒全自动洗衣机</div>
+							<div class="tmprice">&yen;2699.0</div>
+						</a></li>
+						<li><a href="">
+							<img src="img/lu1.png" alt="" />
+							<div class="tmtitle">【12期免息】Apple/苹果iPhone X 全网通4G智能手机苹果10 苹果X</div>
+							<div class="tmprice">&yen;8388.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu2.png" alt="" />
+							<div class="tmtitle">科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机</div>
+							<div class="tmprice">&yen;1799.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu3.jpg" alt="" />
+							<div class="tmtitle">2017新款iPad 9.7英寸苹果平板 32G/128G WiFi版</div>
+							<div class="tmprice">&yen;2558.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu4.png" alt="" />
+							<div class="tmtitle">【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器</div>
+							<div class="tmprice">&yen;48.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu5.jpg" alt="" />
+							<div class="tmtitle">Xiaomi/小米 小米电视4A 55英寸 4k超高清智能wifi网络液晶电视机</div>
+							<div class="tmprice">&yen;2889.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu6.png" alt="" />
+							<div class="tmtitle">三只松鼠 坚果大礼包1430g年货礼盒零食小吃每日坚果组合7袋批发</div>
+							<div class="tmprice">&yen;98.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu7.png" alt="" />
+							<div class="tmtitle">【三只松鼠开口松子218gx2】休闲零食坚果炒货东北手剥红松</div>
+							<div class="tmprice">&yen;49.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu8.png" alt="" />
+							<div class="tmtitle">Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air 128G 笔记本电脑</div>
+							<div class="tmprice">&yen;5958.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu9.png" alt="" />
+							<div class="tmtitle">【三只松鼠_手剥巴旦木235gx2袋】零食坚果炒货特产干果巴达木</div>
+							<div class="tmprice">&yen;36.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu10.jpg" alt="" />
+							<div class="tmtitle">Haier/海尔 EG10014B39GU1 10公斤kg智能变频滚筒全自动洗衣机</div>
+							<div class="tmprice">&yen;2699.0</div>
+						</a></li>
+						<li><a href="">
+							<img src="img/lu1.png" alt="" />
+							<div class="tmtitle">【12期免息】Apple/苹果iPhone X 全网通4G智能手机苹果10 苹果X</div>
+							<div class="tmprice">&yen;8388.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu2.png" alt="" />
+							<div class="tmtitle">科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机</div>
+							<div class="tmprice">&yen;1799.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu3.jpg" alt="" />
+							<div class="tmtitle">2017新款iPad 9.7英寸苹果平板 32G/128G WiFi版</div>
+							<div class="tmprice">&yen;2558.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu4.png" alt="" />
+							<div class="tmtitle">【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器</div>
+							<div class="tmprice">&yen;48.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu5.jpg" alt="" />
+							<div class="tmtitle">Xiaomi/小米 小米电视4A 55英寸 4k超高清智能wifi网络液晶电视机</div>
+							<div class="tmprice">&yen;2889.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu6.png" alt="" />
+							<div class="tmtitle">三只松鼠 坚果大礼包1430g年货礼盒零食小吃每日坚果组合7袋批发</div>
+							<div class="tmprice">&yen;98.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu7.png" alt="" />
+							<div class="tmtitle">【三只松鼠开口松子218gx2】休闲零食坚果炒货东北手剥红松</div>
+							<div class="tmprice">&yen;49.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu8.png" alt="" />
+							<div class="tmtitle">Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air 128G 笔记本电脑</div>
+							<div class="tmprice">&yen;5958.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu9.png" alt="" />
+							<div class="tmtitle">【三只松鼠_手剥巴旦木235gx2袋】零食坚果炒货特产干果巴达木</div>
+							<div class="tmprice">&yen;36.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu10.jpg" alt="" />
+							<div class="tmtitle">Haier/海尔 EG10014B39GU1 10公斤kg智能变频滚筒全自动洗衣机</div>
+							<div class="tmprice">&yen;2699.0</div>
+						</a></li>
+						<li><a href="">
+							<img src="img/lu1.png" alt="" />
+							<div class="tmtitle">【12期免息】Apple/苹果iPhone X 全网通4G智能手机苹果10 苹果X</div>
+							<div class="tmprice">&yen;8388.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu2.png" alt="" />
+							<div class="tmtitle">科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机</div>
+							<div class="tmprice">&yen;1799.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu3.jpg" alt="" />
+							<div class="tmtitle">2017新款iPad 9.7英寸苹果平板 32G/128G WiFi版</div>
+							<div class="tmprice">&yen;2558.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu4.png" alt="" />
+							<div class="tmtitle">【三只松鼠_夏威夷果265gx2袋】零食坚果干果奶油味送开口器</div>
+							<div class="tmprice">&yen;48.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu5.jpg" alt="" />
+							<div class="tmtitle">Xiaomi/小米 小米电视4A 55英寸 4k超高清智能wifi网络液晶电视机</div>
+							<div class="tmprice">&yen;2889.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu6.png" alt="" />
+							<div class="tmtitle">三只松鼠 坚果大礼包1430g年货礼盒零食小吃每日坚果组合7袋批发</div>
+							<div class="tmprice">&yen;98.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu7.png" alt="" />
+							<div class="tmtitle">【三只松鼠开口松子218gx2】休闲零食坚果炒货东北手剥红松</div>
+							<div class="tmprice">&yen;49.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu8.png" alt="" />
+							<div class="tmtitle">Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air 128G 笔记本电脑</div>
+							<div class="tmprice">&yen;5958.0</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu9.png" alt="" />
+							<div class="tmtitle">【三只松鼠_手剥巴旦木235gx2袋】零食坚果炒货特产干果巴达木</div>
+							<div class="tmprice">&yen;36.9</div>
+						</a></li>
+					<li><a href="">
+							<img src="img/lu10.jpg" alt="" />
+							<div class="tmtitle">Haier/海尔 EG10014B39GU1 10公斤kg智能变频滚筒全自动洗衣机</div>
+							<div class="tmprice">&yen;2699.0</div>
+						</a></li>
+				</ul>
+			</div>
+			<!--end内容部分结束-->
+			<div class="end"><img src="img/end.png" alt="" /></div>	
+			</div>
+		<!--页脚footer部分-->
+		<div class="footer">
+				<!--白色的底部-->
+				<div class="foot1">
+					<div class="box">
+						<div class="ad"><a href=""><img src="img/footer.jpg" alt="" /></a></div>
+					<div >					
+							<ul>
+								<li><h4>购物指南</h4></li>
+								<li><a href="">免费注册</a></li>
+								<li><a href="">开通支付宝</a></li>
+								<li><a href="">支付宝充值</a></li>
+							</ul>
+							<ul>
+								<li><h4>天猫保障</h4></li>
+								<li><a href="">发票保障</a></li>
+								<li><a href="">售后规则</a></li>
+								<li><a href="">缺货赔付</a></li>
+							</ul>
+							<ul>
+								<li><h4>支付方式</h4></li>
+								<li><a href="">快捷支付</a></li>
+								<li><a href="">信用卡</a></li>
+								<li><a href="">余额宝</a></li>
+								<li><a href="">蚂蚁花呗</a></li>
+								<li><a href="">货到付款</a></li>
+							</ul>
+							<ul>
+								<li><h4>商家服务</h4></li>
+								<li><a href="">天猫规则</a></li>
+								<li><a href="">商家入驻</a></li>
+								<li><a href="">商家中心</a></li>
+								<li><a href="">天猫智库</a></li>
+								<li><a href="">物流服务</a></li>
+								<li><a href="">喵言喵语</a></li>
+								<li><a href="">运营服务</a></li>
+							</ul>
+							<ul>
+								<li><h4>手机天猫</h4></li>
+								<li><img src="img/sjtm.png" alt="" /></li>
+					</div>
+					</div>
+					</div>
+					<!--黑色的版权信息底部-->
+				<div class="foot2">
+					<!--logo2存放底部的,猫耳朵-->
+					<div style="position: relative;"><div class="logo2"><img src="img/logo2.png" alt="" /></div></div>
+					<div class="box">
+						<div class="about">
+							<a href=""><span> 关于天猫</span></a>
+							<a href=""><span> 帮助中心 </span></a>
+							<a href=""><span> 联系我们</span></a>
+							<a href=""><span> 开放平台</span></a>
+							<a href=""><span> 诚聘英才</span></a>
+							<a href=""><span> 网站合作 </span></a>
+							<a href=""><span>法律声明 </span></a>
+							<a href=""><span>隐私权政策</span></a>
+							<a href=""><span> 知识产权</span></a>
+							<a href=""><span> 廉正举报</span></a>
+							<a href=""><span> 规则意见征集</span></a>
+						</div>
+						<div class="links">
+							<a href=""><span> 阿里巴巴集团| </span></a>
+							<a href=""><span> 淘宝网 |</span></a>
+							<a href=""><span> 天猫 |</span></a>
+							<a href=""><span> 聚划算 |</span></a>
+							<a href=""><span> 全球速卖通 |</span></a>
+							<a href=""><span>  阿里巴巴国际交易市场 |</span></a>
+							<a href=""><span> 1688 |</span></a>
+							<a href=""><span>  阿里妈妈 |</span></a>
+							<a href=""><span> 飞猪 |</span></a>
+							<a href=""><span> 阿里云计算 |</span></a>
+							<a href=""><span>  AliOS |</span></a>
+							<a href=""><span>  阿里通信 |</span></a>
+							<a href=""><span> 万网 |   </span></a>
+							<a href=""><span> 高德 |</span></a>
+							<a href=""><span>  UC |</span></a>
+							<a href=""><span> 友盟 |</span></a>
+							<a href=""><span>  虾米 |</span></a>
+							<a href=""><span> 阿里星球 |</span></a>
+							<a href=""><span> 来往 |</span></a>
+							<a href=""><span> 钉钉 |</span></a>
+							<a href=""><span> 支付宝</span></a>
+						</div>
+						<div class="info">
+							<span>增值电信业务经营许可证：<a href="">浙B2-20110446</a> </span> 
+							<span>网络文化经营许可证：<a href="">浙网文[2015]0295-065号</a></span> 
+							<span><a href="">12318举报</a></span> 
+							<span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com </span>
+							<span>互联网药品信息服务资质证书编号：<a href="">浙-（经营性）-2017-0005</a></span> 
+							<span><a href=""><img src="img/gongan.png"/>浙公网安备 33010002000120号</a></span>
+						</div>
+						<div class="copy">
+							<div>&copy;&nbsp;&nbsp;2003-2018&nbsp;&nbsp;TMALL.COM&nbsp;&nbsp;版权所有</div>
+							<a href=""><img src="img/gongshang.jpg" alt="" /></a><a href=""><img src="img/wenhua.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>		
+		<!--右侧边栏-->
+		<div class="rightbar">
+			<div class="bar1"></div>
+			<div class="bar2">
+			<a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianmaochaoshigouwuche"></use></svg>购物车</a>
+			</div>
+			<div class="bar3">
+				<div class="bartop">
+						<a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wodezichan"></use>
+								<div class="bartitle" style="display:none">我的资产</div>				
+					</svg></a>
+					<a href=""><svg class="icon" aria-hidden="true" style="font-size:35px"><use xlink:href="#icon-shoucang"></use>
+						<div class="bartitle" style="display:none">我的收藏</div>
+					</svg></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true"><use xlink:href="#icon-lishijilu"></use>
+							<div class="bartitle" style="display:none">我看过的</div>
+					</svg></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true"><use xlink:href="#icon-chongzhi"></use>
+							<div class="bartitle" style="display:none">我要充值</div>
+					</svg></a>
+				</div>
+				<div class="barbottom">
+					<a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-fankui"></use>
+								<div class="bartitle" style="display:none">用户反馈</div>				
+					</svg></a>
+					<a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-erweima"></use>
+						<div class="bartitle" style="display:none">下载应用</div>
+					</svg></a>
+					<a href="#">
+						<svg class="icon" aria-hidden="true"><use xlink:href="#icon-fanhuidingbu"></use>
+							<div class="bartitle" style="display:none">返回顶部</div>
+					</svg></a>
+				</div>
+			</div>
+		</div>
+		<!--左侧电梯导航条-->	
+		<div class="leftbar">
+		<div class="lbar1" style="background: #FF0036;">导航</div>
+		<div class="lbar2"><a href="#tmsurper">天猫超市</a></div>
+		<div class="lbar3"><a href="#tmhk">天猫国际</a></div>
+		<div class="lbar4"><a href="#mlrs">美丽人生</a></div>
+		<div class="lbar5"><a href="#cdkw">潮电酷玩</a></div>
+		<div class="lbar6"><a href="#jjsh">居家生活</a></div>
+		<div class="lbar7"><a href="#dzac">打造爱巢</a></div>
+		<div class="lbar8"><a href="#hwcx">户外出行</a></div>
+		<div class="lbar9" ><a href="#love">猜你喜欢</a></div>
+		<div class="lbar10" style="background: #ababab;"><a href="#"><svg class="icon" aria-hidden="true" style="font-size:25px"><use xlink:href="#icon-fanhuidingbu"></use></svg></a></div>
+		</div>	
+		<!--固定导航栏-->
+		<div class="fixednav">
+			<div class="fnavl pull-left"><svg class="icon" aria-hidden="true">
+  				<use xlink:href="#icon-tianmaotmall"></use></svg>
+			</div>
+			<div class="fnavr pull-right">
+				<!--固定导航右侧的输入框-->
+				<input type="text" placeholder="请输入关键字进行搜索" class="search"/>
+				<input type="button" value="搜索" class="btn"/>
+			</div>
+		</div>
+</body>				
+</html>
